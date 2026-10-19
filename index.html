@@ -213,13 +213,36 @@
   .fade.in{opacity:1;transform:none}
 
   @media(max-width:900px){
-    .hero{grid-template-columns:1fr;gap:40px}
+    .hero{grid-template-columns:1fr;gap:44px}
     .mock{transform:none}
     .feat-grid{grid-template-columns:1fr 1fr}
     .stats{grid-template-columns:1fr 1fr}
     .nav-links a:not(.btn){display:none}
   }
-  @media(max-width:560px){.feat-grid{grid-template-columns:1fr}}
+  @media(max-width:640px){
+    header{padding:104px 0 56px}
+    .hero{gap:36px}
+    .hero-cta{flex-direction:column}
+    .hero-cta .btn{justify-content:center;width:100%}
+    .hero-meta{gap:14px}
+    .m-cards{grid-template-columns:1fr 1fr}
+    .m-table{display:none}
+    .feat-grid{grid-template-columns:1fr}
+    .ig{flex-wrap:wrap;gap:14px;padding:18px 20px}
+    .ig-btn{margin-left:0;width:100%;text-align:center}
+    .dl{padding:48px 20px}
+    .dl .btn-primary{width:100%;justify-content:center;padding:15px 20px}
+    .dl-note{gap:10px 16px}
+    .req{gap:8px}
+    .req div{width:100%;text-align:center}
+    .stat{padding:20px 14px}
+    .stat b{font-size:24px}
+    .mock-top{flex-wrap:wrap}
+    .mock-title{display:none}
+    section{padding:64px 0}
+    .foot{justify-content:center;text-align:center}
+    .foot-right{margin-left:0;justify-content:center;width:100%}
+  }
 </style>
 </head>
 <body>
