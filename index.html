@@ -56,6 +56,7 @@
     border-bottom:1px solid var(--border);
   }
   .nav-in{max-width:1140px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:14px}
+  .nav-brand{display:flex;align-items:center;gap:14px;cursor:pointer}
   .nav-logo{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid #e6e6ef;overflow:hidden;display:grid;place-items:center;
     box-shadow:0 0 22px -4px rgba(124,108,240,.45),0 4px 14px rgba(0,0,0,.6)}
   .nav-logo img{width:100%;height:100%;object-fit:cover}
@@ -227,8 +228,10 @@
 
 <nav>
   <div class="nav-in">
-    <div class="nav-logo"><img src="favicon.jpg" alt="LuxVision"></div>
-    <div class="nav-name">LUX <span>VISION</span></div>
+    <a href="#top" class="nav-brand">
+      <div class="nav-logo"><img src="favicon.jpg" alt="LuxVision"></div>
+      <div class="nav-name">LUX <span>VISION</span></div>
+    </a>
     <div class="nav-links">
       <a href="#ozellikler">Özellikler</a>
       <a href="#neden">Neden LuxVision</a>
@@ -237,7 +240,7 @@
   </div>
 </nav>
 
-<header>
+<header id="top">
   <div class="wrap hero">
     <div>
       <span class="pill"><span class="dot"></span> v1.3.0 — canlı izleme aktif</span>
